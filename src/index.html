@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styleCalculator.css">
+    <script src="budgetCalculator.js" async defer></script>
+</head>
+
+<body>
+    <h1>Budget Calculator</h1>
+    <div class="mainWrapper">
+        <div class="box">
+            <h2>Income</h2>
+            <form class="inputForm">
+                <label for="salaryOne">Income 1</label><br>
+                <input type="number" id="salaryOne" name="sOne" placeholder="Enter your Income"><br><br>
+
+                <label for="salaryTwo">Income 2</label><br>
+                <input type="number" id="salaryTwo" name="tOne" placeholder="Enter your Income"><br><br>
+
+
+
+            </form>
+        </div>
+        <div class="box">
+            <h2>Expenses</h2>
+            <form class="inputForm">
+                <!-- <label for="expenses">Expenses</label><br> -->
+                <input type="number" id="expense1" placeholder="Expense"><br><br>
+                <input type="number" id="expense2" placeholder="Expense"><br><br>
+                <input type="number" id="expense3" placeholder="Expense"><br><br>
+                <input type="number" id="expense4" placeholder="Expense"><br><br>
+
+            </form>
+            <div class="buttonWrapper">
+                <input id="submitExpenses" type="button" onclick="calculate()" value="Calculate">
+            </div><br><br>
+            <div id="incomeResultFinal" class="incomesResult">
+
+            </div>
+            <div id="expensesResultFinal" class="expensesResult">
+
+            </div>
+            <div id="calculatedResultFinal" class="calculatedResult">
+
+            </div>
+        </div>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+</body>
+
+</html>
